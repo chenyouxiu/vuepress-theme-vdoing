@@ -18,8 +18,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Evan's blog",
-      description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
+      title: "Han blog",
+      description: '关注linux运维,集合openstack,ansbile,docker,k8s,python技术博客',
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -30,18 +30,19 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '前端',
-        link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        text: 'linux',
+        link: '/base/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: '前端文章',
+            text: 'linux入门',
             items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+              { text: 'linux命令学习', link: '/pages/8143cc480faf9a11/' },
+              { text: 'linux服务搭建', link: '/pages/8143cc480faf9a11/' },
             ],
           },
           {
-            text: '学习笔记',
+            text: 'linux脚本编写',
             items: [
               { text: '《JavaScript教程》', link: '/note/javascript/' },
               { text: '《JavaScript高级程序设计》', link: '/note/js/' },
@@ -119,7 +120,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'chenyouxiu/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
